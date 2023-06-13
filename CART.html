@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="logo">
+          <img src="images/logo.png" width="100px" alt="" />
+        </div>
+        <ul>
+          <li class="active"><i class="fa-solid fa-house"></i> Home</li>
+          <li><i class="fa-solid fa-user"></i> User</li>
+          <li><i class="fa-solid fa-heart"></i> Favorite</li>
+        </ul>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i> Email</li>
+          <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+          <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+        </ul>
+      </div>
+      <div class="center">
+        <div class="search">
+          <div class="form">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="search..." />
+            <button>search</button>
+          </div>
+        </div>
+        <h2>Products</h2>
+        <div class="list">
+          <div class="item" data-key="1">
+            <div class="img">
+              <img src="PRODUIT EN PROMO/sebiaclear-serum-30ml.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="title">SVR</div>
+              <div class="des">Sebiaclear Serum 30ml</div>
+              <div class="price">65.900DTN <del>82.300TND</del></div>
+              <input type="number" class="count" min="1" value="1" />
+              <button class="add">Add to cart</button>
+              <button class="remove" onclick="Remove(1)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="item" data-key="2">
+            <div class="img">
+              <img src="PRODUIT EN PROMO/1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="title">SVR</div>
+              <div class="des">Ampoule [C] "Anti-OX" 30ml</div>
+              <div class="price">109.900 TND<del> 129.000 TND</del></div>
+              <input type="number" class="count" min="1" value="1" />
+              <button class="add">Add to cart</button>
+              <button class="remove" onclick="Remove(2)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="item" data-key="3">
+            <div class="img">
+              <img src="PRODUIT EN PROMO/2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="title">SVR</div>
+              <div class="des">Ampoule [B3] "Hydra " 30ml</div>
+              <div class="price">113.900 DTN <del>142.000 TND</del></div>
+              <input type="number" class="count" min="1" value="1" />
+              <button class="add">Add to cart</button>
+              <button class="remove" onclick="Remove(3)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="item" data-key="4">
+            <div class="img">
+              <img
+                src="PRODUIT EN PROMO/-cera-biotic-baume-regenerant-comblant-50-ml.jpg"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <div class="title">SVR</div>
+              <div class="des">
+                [Cera] BIOTIC "Baume Regenerant Comblant" 50-Ml
+              </div>
+              <div class="price">139.000 DTN <del> 173.500 TND</del></div>
+              <input type="number" class="count" min="1" value="1" />
+              <button class="add">Add to cart</button>
+              <button class="remove" onclick="Remove(4)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart">
+        <div class="name">Cart</div>
+        <div class="ListCart"></div>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
